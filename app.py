@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import matplotlib as plt
 import csv
 import copy
 import argparse
 import itertools
 from collections import Counter
 from collections import deque
-
 import cv2 as cv
 import numpy as np
 import mediapipe as mp
@@ -101,7 +101,7 @@ def main():
     while True:
         fps = cvFpsCalc.get()
 
-        # Process Key (ESC: end) #################################################
+        # Process Key (ESC: end) ################################################
         key = cv.waitKey(10)
         if key == 27:  # ESC
             break
@@ -212,7 +212,7 @@ def calc_bounding_rect(image, landmarks):
     return [x, y, x + w, y + h]
 
 
-def calc_landmark_list(image, landmarks):
+def calc_landmark_list(image, landmarks):#
     image_width, image_height = image.shape[1], image.shape[0]
 
     landmark_point = []

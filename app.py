@@ -17,7 +17,6 @@ from model import PointHistoryClassifier
 
 def get_args():
     parser = argparse.ArgumentParser()
-    #this also works
 
     parser.add_argument("--device", type=int, default=0)
     parser.add_argument("--width", help='cap width', type=int, default=960)

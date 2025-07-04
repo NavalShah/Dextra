@@ -76,6 +76,37 @@ The pointer functionality is triggered when the system detects a "Pointer" gestu
    - Normalized by image dimensions for resolution independence
    - Maintains temporal context through a sliding window approach
 
+## Getting Started
+
+### Download from GitHub
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/NavalShah/Dextra.git
+   cd Dextra
+   ```
+
+2. **Install dependencies**:
+
+   ```bash
+   pip install opencv-python mediapipe tensorflow numpy matplotlib
+   ```
+
+3. **Run the application**:
+   ```bash
+   python app.py
+   ```
+
+### Download Portable Version
+
+If you don't want to install Python dependencies manually:
+
+1. Download `HandGestureRecognition_Portable.zip` from the [Releases](https://github.com/yourusername/Dextra/releases) page
+2. Extract the zip file
+3. Run `setup.bat` to install dependencies automatically
+4. Run `run.bat` to start the application
+
 ## Usage
 
 ### Basic Operation
